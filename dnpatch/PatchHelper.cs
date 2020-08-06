@@ -209,7 +209,7 @@ namespace dnpatch
             if (_keepOldMaxStack)
                 Module.Write(name, new ModuleWriterOptions(Module)
                 {
-                    MetaDataOptions = {Flags = MetaDataFlags.KeepOldMaxStack}
+                    MetadataOptions = {Flags = MetadataFlags.KeepOldMaxStack}
                 });
             else
                 Module.Write(name);
@@ -224,7 +224,7 @@ namespace dnpatch
             if (_keepOldMaxStack)
                 Module.Write(_file + ".tmp", new ModuleWriterOptions(Module)
                 {
-                    MetaDataOptions = { Flags = MetaDataFlags.KeepOldMaxStack }
+                    MetadataOptions = { Flags = MetadataFlags.KeepOldMaxStack }
                 });
             else
                 Module.Write(_file + ".tmp");
